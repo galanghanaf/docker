@@ -5,9 +5,9 @@ Container tersebut nantinya akan memuat kumpulan ***image*** yang berisi data ko
 file serta pendukung lainnya.
 
 ## Menginstal Docker 
-```
-https://docs.docker.com/engine/install/
-```
+
+- https://docs.docker.com/engine/install/
+
 
 ## Melakukan Pull Image
 ```
@@ -30,14 +30,14 @@ docker images
 ## Menghapus Image
 - Catatan : Image dapat dihapus bila container telah dihentikan atau dihapus.
 ```
-docker image rm <nama_image>
+docker image rm <container_id>
 ```
 - contoh
 ```
-docker image rm nginx
+docker image rm 92511e4h66a3
 ```
 
-## Menjalankan image (inilah yang disebut ***container***)
+## Menjalankan image
 ```
 docker run --name <nama_containernya_bebas> -p <portnya_bebas>:80 -d <nama_image>
 ```
@@ -56,3 +56,48 @@ docker ps
 docker ps -a
 ```
 
+## Debugging Cotainer melalui Interactive Terminal
+```
+docker exec -it <container_id> /bin/bash
+```
+- contoh
+```
+docker exec -it 92511e4h66a3 /bin/bash
+```
+
+
+## Menghentikan / stop container
+```
+docker stop <container_id>
+```
+- contoh
+```
+docker stop 92511e4h66a3
+```
+
+## Menjalankan / start container
+```
+docker start <container_id>
+```
+- contoh
+```
+docker start 92511e4h66a3
+```
+
+## Melihat logs / riwayat aktivitas pada cotainer
+```
+docker logs <cotainer_id>
+```
+- contoh
+```
+docker logs 92511e4h66a3
+```
+
+## Menghapus container
+```
+docker rm -f <cotainer_id>
+```
+- contoh
+```
+docker rm -f 92511e4h66a3
+```
