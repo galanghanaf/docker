@@ -64,15 +64,6 @@ docker ps
 docker ps -a
 ```
 
-## Menghentikan / stop container
-```
-docker stop <container_id>
-```
-- contoh
-```
-docker stop 92511e4h66a3
-```
-
 ## Menjalankan / start container
 ```
 docker start <container_id>
@@ -80,6 +71,24 @@ docker start <container_id>
 - contoh
 ```
 docker start 92511e4h66a3
+```
+
+## Debugging Cotainer melalui Interactive Terminal
+```
+docker exec -it <container_id> /bin/bash
+```
+- contoh
+```
+docker exec -it 92511e4h66a3 /bin/bash
+```
+
+## Menghentikan / stop container
+```
+docker stop <container_id>
+```
+- contoh
+```
+docker stop 92511e4h66a3
 ```
 
 ## Melihat logs / riwayat aktivitas pada cotainer
