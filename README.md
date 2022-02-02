@@ -53,6 +53,7 @@ docker run -it 92511e4h66a3 /bin/bash
 ```
 
 # Setelah dirunning maka Docker Image berubah menjadi Container
+Perubahan ini di ikuti dengan adanya docker Container ID, yang berbeda dengan Image ID.
 
 ## Melihat container yang sedang berjalan
 ```
