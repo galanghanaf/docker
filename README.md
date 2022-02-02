@@ -52,7 +52,7 @@ docker run --name website -p 8080:80 -d nginx
 docker run -it 92511e4h66a3 /bin/bash
 ```
 
-#Setelah dirunning maka Docker Image berubah menjadi Container
+# Setelah dirunning maka Docker Image berubah menjadi Container
 
 ## Melihat container yang sedang berjalan
 ```
