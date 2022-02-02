@@ -41,10 +41,18 @@ docker image rm 92511e4h66a3
 ```
 docker run --name <nama_containernya_bebas> -p <portnya_bebas>:80 -d <nama_image>
 ```
+```
+docker run -it <image_id> /bin/bash
+```
 - contoh
 ```
 docker run --name website -p 8080:80 -d nginx
 ```
+```
+docker run -it 92511e4h66a3 /bin/bash
+```
+
+#Setelah dirunning maka Docker Image berubah menjadi Container
 
 ## Melihat container yang sedang berjalan
 ```
@@ -55,16 +63,6 @@ docker ps
 ```
 docker ps -a
 ```
-
-## Debugging Cotainer melalui Interactive Terminal
-```
-docker exec -it <container_id> /bin/bash
-```
-- contoh
-```
-docker exec -it 92511e4h66a3 /bin/bash
-```
-
 
 ## Menghentikan / stop container
 ```
