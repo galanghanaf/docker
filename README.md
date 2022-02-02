@@ -71,7 +71,7 @@ docker stop <container_id>
 ```
 - contoh
 ```
-docker stop 92511e4h66a3
+docker stop 800000e4h66a3
 ```
 
 ## Menjalankan / start container
@@ -80,7 +80,7 @@ docker start <container_id>
 ```
 - contoh
 ```
-docker start 92511e4h66a3
+docker start 800000e4h66a3
 ```
 
 ## Debugging Cotainer melalui Interactive Terminal
@@ -89,7 +89,7 @@ docker exec -it <container_id> /bin/bash
 ```
 - contoh
 ```
-docker exec -it 92511e4h66a3 /bin/bash
+docker exec -it 800000e4h66a3 /bin/bash
 ```
 
 ## Melihat logs / riwayat aktivitas pada cotainer
@@ -98,7 +98,7 @@ docker logs <cotainer_id>
 ```
 - contoh
 ```
-docker logs 92511e4h66a3
+docker logs 800000e4h66a3
 ```
 
 ## Menghapus container
@@ -107,5 +107,5 @@ docker rm -f <cotainer_id>
 ```
 - contoh
 ```
-docker rm -f 92511e4h66a3
+docker rm -f 800000e4h66a3
 ```
