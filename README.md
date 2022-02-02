@@ -30,7 +30,7 @@ docker images
 ## Menghapus Image
 - Catatan : Image dapat dihapus bila container telah dihentikan atau dihapus.
 ```
-docker image rm <container_id>
+docker image rm <image_id>
 ```
 - contoh
 ```
