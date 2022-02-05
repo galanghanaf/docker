@@ -12,7 +12,17 @@ sudo docker run -it --name debian11 debian:11 /bin/bash
 
 ## Exit from debian11 cotainer
 ```
-exit
+root@f5724af38j7p:/# exit
+```
+
+## Start debian11 container
+```
+sudo docker start debian11
+```
+
+## Check debian11 container running or not
+```
+sudo docker ps
 ```
 
 ## Running debian11 container
