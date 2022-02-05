@@ -4,7 +4,7 @@ software maupun sistem operasi ke dalam suatu wadah yang disebut ***container***
 Container tersebut nantinya akan memuat kumpulan ***image*** yang berisi data konfigurasi 
 file serta pendukung lainnya.
 
-## Menginstal Docker 
+## Cara Instalasi Docker 
 
 - https://docs.docker.com/engine/install/
 
