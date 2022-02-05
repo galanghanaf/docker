@@ -47,7 +47,7 @@ apt install openssh-server
 ```
 apt install openssh-client
 ```
-- Configuration SSH on debian 11 container
+- SSH configuration on debian 11 container
 ```
 vim /etc/ssh/sshd_config
 ```
