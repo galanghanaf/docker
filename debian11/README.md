@@ -45,11 +45,6 @@ passwd root
 apt install vim
 ```
 
-## Get ip on debian11 container
-```
-apt install iproute2
-```
-
 ## Get ssh on debian11 container
 ```
 apt install openssh-server
@@ -70,3 +65,17 @@ PermitRootLogin yes
 and restart ssh
 service ssh restart
 ```
+
+## Get ip on debian11 container
+```
+apt install iproute2
+```
+- Exit from debian 11 container
+```
+root@f5724af38j7p:/# exit
+```
+- and get ip on debian11 container
+```
+docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' debian11
+```
+## Done
