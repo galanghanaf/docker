@@ -27,7 +27,7 @@ sudo docker ps
 
 ## Running debian11 container
 ```
-sudo docker exec -it debian11
+sudo docker exec -it debian11 /bin/bash
 ```
 
 ## Get Update debian11 container
