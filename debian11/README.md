@@ -1,4 +1,4 @@
-# Debian 11 di Docker
+# Debian 11 on Docker
 
 ## Pulling Image
 ```
