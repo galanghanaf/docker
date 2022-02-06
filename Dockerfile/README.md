@@ -1,4 +1,5 @@
 # Dockerfile
+Reference : https://docs.docker.com/engine/reference/builder/
 
 ## Create Dockerfile
 
@@ -19,13 +20,14 @@ FROM ubuntu:20.04
 LABEL maintainer="Galang Hanafi <galanghanafi8@gmail.com>"
 RUN apt update && apt upgrade -y
 RUN apt install vim nginx iproute2 -y
+#ADD .file.sh /path/to/file.sh
 CMD ["/bin/bash"]
 ```
 
 ## Build Dockerfile
 
 ```
-sudo docker build -t Ubuntults:0.1 .
+sudo docker build -t ubuntults:0.1 .
 ```
 
 - after that the dockerfile becomes a docker image

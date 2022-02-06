@@ -4,14 +4,14 @@ software maupun sistem operasi ke dalam suatu wadah yang disebut ***container***
 Container tersebut nantinya akan memuat kumpulan ***image*** yang berisi data konfigurasi 
 file serta pendukung lainnya.
 
-## Cara Instalasi Docker 
+## Docker installation
 
 - https://docs.docker.com/engine/install/
 
 
-## Melakukan Pull Image
+## Pull Image
 ```
-docker pull <nama_image>
+docker pull <image>
 ```
 - contoh melakukan pull image dari https://hub.docker.com
 ```
@@ -27,7 +27,7 @@ docker image ls
 docker images
 ```
 
-## Menghapus Image
+## Remove Image
 - Catatan : Image dapat dihapus bila container telah dihentikan atau dihapus.
 ```
 docker image rm <image_id>
@@ -37,7 +37,7 @@ docker image rm <image_id>
 docker image rm 92511e4h66a3
 ```
 
-## Menjalankan image
+## Running image
 ```
 docker run --name <nama_containernya_bebas> -p <portnya_bebas>:80 -d <nama_image>
 ```
@@ -65,7 +65,7 @@ docker ps
 docker ps -a
 ```
 
-## Menghentikan / stop container
+## Stop container
 ```
 docker stop <container_id>
 ```
@@ -74,7 +74,7 @@ docker stop <container_id>
 docker stop 800000e4h66a3
 ```
 
-## Menjalankan / start container
+## Start container
 ```
 docker start <container_id>
 ```
@@ -101,7 +101,7 @@ docker logs <cotainer_id>
 docker logs 800000e4h66a3
 ```
 
-## Menghapus container
+## Remove container
 ```
 docker rm -f <cotainer_id>
 ```
