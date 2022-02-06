@@ -25,7 +25,7 @@ CMD ["/bin/bash"]
 ## Build Dockerfile
 
 ```
-sudo docker build -t Ubuntults:0.1 .
+sudo docker build -t ubuntults:0.1 .
 ```
 
 - after that the dockerfile becomes a docker image
