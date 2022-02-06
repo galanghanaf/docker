@@ -4,14 +4,14 @@ software maupun sistem operasi ke dalam suatu wadah yang disebut ***container***
 Container tersebut nantinya akan memuat kumpulan ***image*** yang berisi data konfigurasi 
 file serta pendukung lainnya.
 
-## Cara Instalasi Docker 
+## Docker installation
 
 - https://docs.docker.com/engine/install/
 
 
-## Melakukan Pull Image
+## Pull Image
 ```
-docker pull <nama_image>
+docker pull <image>
 ```
 - contoh melakukan pull image dari https://hub.docker.com
 ```
